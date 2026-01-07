@@ -56,6 +56,43 @@
       padding: 0 20px;
     }
 
+    .hero {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .hero img {
+      width: 80%;
+      border-radius: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    }
+
+    .hero-text h2 {
+      font-size: 32px;
+      color: var(--verde);
+      margin-bottom: 16px;
+    }
+
+    .hero-text p {
+      font-size: 17px;
+      margin-bottom: 24px;
+    }
+
+    .hero-text a {
+      display: inline-block;
+      background: var(--verde-escuro);
+      color: #fff;
+      padding: 14px 28px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
     .cards {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -108,15 +145,42 @@
       padding: 30px 20px;
       color: #777;
     }
+
+    @media (max-width: 768px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="images/logo.jpeg" alt="Juntos por Patas" />
+    <img src="/images/logo.jpeg" alt="Juntos por Patas" />
     <h1>Juntos por Patas</h1>
     <p>Cuidado, carinho e responsabilidade em cada passeio com seu melhor amigo 🐾</p>
   </header>
+
+  <div class="hero">
+    <div class="hero-text">
+      <h2>Um casal, um propósito: cuidar bem do seu pet</h2>
+      <p>
+        Somos um casal apaixonado por cães e noivos, nos preparando para o casamento enquanto construímos algo que realmente amamos. Pensamos em unir nossos sonhos com aquilo que faz nosso coração bater mais forte — e foi assim que nasceu o Juntos por Patas.
+      </p>
+      <p>
+        Eu, Rodrigo, sou formado em Medicina Veterinária, e junto com a Isabella decidimos transformar nosso amor pelos doguinhos em um serviço feito com responsabilidade, carinho e propósito.
+      </p>
+      <p>
+        Nosso objetivo é ajudar o seu pet a ter uma vida mais saudável, liberar energia, passear e viver momentos felizes — como eles merecem. Sabemos que nem sempre você tem tempo para sair com seu amigão ou amigona, e estamos aqui para cuidar dele(a) com a atenção e o amor que você espera.
+      </p>
+      <p>
+        Quer conversar com a gente ou agendar um passeio?
+        É só clicar no botão abaixo 💚
+      </p>      
+      <a href="https://wa.me/5511951776668" target="_blank">Agendar passeio</a>
+    </div>
+    <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16" alt="Dog feliz" />
+  </div>
 
   <section>
     <h2 style="text-align:center; margin-bottom:32px">Nossos Serviços</h2>
