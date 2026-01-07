@@ -150,6 +150,28 @@
       color: var(--bege);
     }
 
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 20px;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .gallery-box {
+      border: #5f6b2d 3px solid;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
     footer {
       text-align: center;
       padding: 30px 20px;
@@ -207,6 +229,16 @@
         <h3>Visitas Pet</h3>
         <p>Alimentação, companhia e cuidados quando você não pode estar presente.</p>
       </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 style="text-align:center; margin-bottom:40px">Nossos Amigos de Quatro Patas</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d" />
+      <p class="gallery-box">🐾 Seu doguinho pode ser o próximo por aqui 🐶</p>
+      <p class="gallery-box">🐾 Seu doguinho pode ser o próximo por aqui 🐶</p>
+      <p class="gallery-box">🐾 Seu doguinho pode ser o próximo por aqui 🐶</p>
     </div>
   </section>
 
